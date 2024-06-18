@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    color: #0D138D;
     
 }
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #EFF0F6;
+    background-color: #FCFCFD;
     color: #0D138D;
     padding: 1rem 2rem;
     
@@ -83,7 +84,8 @@ video {
     left: 45%;
     transform: translate(-80%, -50%);
     text-align: left;
-    color:#EFF0F6;
+    color:hsl(0, 0%, 39%);
+    color:#0D138D;
     z-index: 2;
     background: rgba(11, 14, 20, 0.018);
     padding: 2rem;
@@ -95,7 +97,7 @@ video {
 .content-overlay a{
     text-transform: uppercase;
     text-decoration: none;
-    color: #BDE25A;
+    color: #049DD9;
 }
 
 .content-overlay h1 {
@@ -104,6 +106,40 @@ video {
     margin-bottom: 1rem;
    
 }
+/* ------------------------small banner area -------------------------------------- */
+.small_banners {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1.8fr 0.6fr 0.6fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    height: 20vh;
+    text-align: center;
+  }
+  
+  .small1 {
+     grid-area: 1 / 2 / 2 / 3;
+    background-color: #0A13C2;
+    padding: 1.5rem;
+    color: #FFFFFF;
+    }
+  
+  .small2 { 
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #404927;
+    padding: 1.5rem;
+    color: #FFFFFF;
+ }
+  
+  .bigarea { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-color: #FCFCFD;
+    padding: 1.5rem;
+    color:#0D138D;
+}
+  
+/* ///////////////////////////////////////////////////////////////////////////// */
 
 /* .button1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -177,7 +213,7 @@ button {
     width: 150px;
     height: 50px;
     
-    border: 1px solid #BDE25A;
+    border: 1px solid #049DD9;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease-in;
@@ -219,7 +255,7 @@ button {
    }
    
    button span {
-    color: #EFF0F6;
+    color: #049DD9;
     font-size: 18px;
     transition: all 0.3s ease-in;
    }
@@ -292,3 +328,174 @@ button {
 .img img{
     border: 2px solid #14BAFB;
 }
+
+/* -------------------------animation--------------------------------------- */
+
+/* html,
+body {
+  background-color: #F6F4F2;
+  color: #252423;
+} */
+.content-overlay-2{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-80%, -50%);
+    text-align: left;
+    color:#0D138D;
+    z-index: 2;
+    background: rgba(11, 14, 20, 0);
+    padding: 2rem;
+   /*  border-radius: 10px; */
+    backdrop-filter: blur(30px);
+    width: 50%;
+}
+.content-overlay-2 a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1F29F9;
+}
+
+.content-overlay-2 h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+   
+}
+.btn-ex-2 {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    color: #0D138D;
+    border: 1px solid #1F29F9;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    background-color: transparent;
+   }
+   .btn-ex-2 span {
+    color: #1F29F9;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+} */
+
+.animation-wrapper {
+  width: 80%;
+  padding-bottom: 40%;
+}
+
+.stagger-visualizer {
+  position: absolute;
+  width: 1100px;
+  height: 550px;
+  transform-origin: left top;
+}
+
+.stagger-visualizer .dots-wrapper {
+  transform: translateZ(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.stagger-visualizer .dot {
+  position: relative;
+  z-index: 1;
+  width: 23px;
+  height: 23px;
+  margin: 16px;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+@media (min-width: 740px) {
+  .stagger-visualizer .dot {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #FFFFFF 8%, #D3CDC6 100%);
+    background-image: linear-gradient(180deg, #FFFFFF 8%, #DBF5FF 100%);
+  }
+}
+
+.stagger-visualizer .cursor {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 37px;
+  height: 37px;
+  margin: 9px;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////exempel 3 ///////////////////////////////////////////////////////////////////////// */
+.lab-4{
+    filter: blur(5px); /* Apply blur effect */
+    opacity: 0.8; /* Apply opacity effect */
+}
+
+/* .ex-3{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90vh;
+
+}
+.left-side{
+    position: relative;
+    width: 20%;
+    height: 100vh;
+}
+.content-overlay-3{
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    transform: translate(-70%, -50%);
+    text-align: left;
+    color:#0D138D;
+    z-index: 2;
+    background: rgba(11, 14, 20, 0);
+    padding: 1rem;
+  
+    backdrop-filter: blur(30px);
+    width: 130%;
+}
+.content-overlay-3 a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1F29F9;
+}
+
+.content-overlay-3 h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+   
+}
+.right-side{
+    position: relative;
+    width: 80%;
+    height: 100vh;
+}
+.rightvideo{
+    position: absolute;
+    width: 400px;
+    height: 10vh;
+    
+} */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
